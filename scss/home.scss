@@ -1,0 +1,18 @@
+@import "config";
+@import "aside";
+@import "main";
+@import "svg";
+@import "news";
+@import "btns";
+@import "follow";
+@import "footer";
+body {
+    background-color: $primary-color;
+    color: $secondary-color;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 188px minmax(500px, 1fr) 200px;
+    margin: 0;
+    position: relative;
+}

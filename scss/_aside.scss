@@ -1,0 +1,88 @@
+.sideBar {
+    height: 100vh;
+    width: 188px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding: 1rem 0;
+    padding-right: 1rem;
+    align-items: end;
+    border-right: 1px solid $border-color;
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.35rem;
+
+        .image1 {
+            margin-bottom: 0.5rem;
+
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        &_icon {
+            height: 3rem;
+            width: 3rem;
+            @include flex;
+
+            background-color: transparent;
+            color: $secondary-color;
+
+            @include transition-ease;
+
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten($color: $primary-color,
+                        $amount: 10%);
+                @include transition-ease;
+            }
+
+
+            button {
+                width: 3rem;
+                height: 3rem;
+                @include flex;
+                border: none;
+                background-color: $secondary-color;
+                border-radius: 50%;
+                cursor: pointer;
+                svg{
+                    fill: $primary-color;
+                }
+                
+
+                &:hover {
+                    background-color: lighten($color: $primary-color,
+                            $amount: 80%);
+                    @include transition-ease;
+                }
+            }
+        }
+
+    }
+
+    .profile {
+        span {
+            font-size: 2.5rem;
+        }
+
+        margin-top: auto;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 50%;
+
+
+        &:hover {
+            background-color: lighten($color: $primary-color,
+                    $amount: 10%);
+            @include transition-ease;
+        }
+    }
+}

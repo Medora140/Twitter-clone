@@ -1,0 +1,79 @@
+{
+  "trends": [
+    {
+      "id": 1,
+      "category": "Politics . Trending",
+      "title": "लघु उद्योग"
+    },
+    {
+      "id": 2,
+      "category": "Trending in India",
+      "title": "#BiharTeachersNeed7thPay"
+    },
+    {
+      "id": 3,
+      "category": "Politics . Trending",
+      "title": "The PLI"
+    },
+    {
+      "id": 4,
+      "category": "Trending in India",
+      "title": "#EndEnforcedDisappearances"
+    },
+    {
+      "id": 5,
+      "category": "Trending in India",
+      "title": "India's technology sector"
+    },
+    {
+      "id": 6,
+      "category": "Trending in India",
+      "title": "Monsoon updates"
+    },
+    {
+      "id": 7,
+      "category": "Politics . Trending",
+      "title": "#AIBOC"
+    },
+    {
+      "id": 8,
+      "category": "Trending in India",
+      "title": "Artificial Intelligence"
+    },
+    {
+      "id": 9,
+      "category": "Trending in India",
+      "title": "Indian startups"
+    },
+    {
+      "id": 10,
+      "category": "Trending in India",
+      "title": "केशव प्रसाद मौर्य"
+    },
+    {
+      "id": 11,
+      "category": "Trending in India",
+      "title": "Cricket"
+    },
+    {
+      "id": 12,
+      "category": "Trending in India",
+      "title": "#ChughExposesMann"
+    },
+    {
+      "id": 13,
+      "category": "Only on X - Trending",
+      "title": "Samaj Utthan"
+    },
+    {
+      "id": 14,
+      "category": "Only on X - Trending",
+      "title": "Nishkam Sewa"
+    },
+    {
+      "id": 15,
+      "category": "Business & finance . Trending",
+      "title": "5-DDay Banking"
+    }
+  ]
+}

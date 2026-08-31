@@ -1,0 +1,140 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "OpenAI announces new developments in artificial intelligence",
+      "source": {
+        "name": "Tech News"
+      },
+      "publishedAt": "2026-08-29T08:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "New AI coding tools reshape the future of software development",
+      "source": {
+        "name": "The Verge"
+      },
+      "publishedAt": "2026-08-29T06:45:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Space technology reaches another major milestone",
+      "source": {
+        "name": "Science Daily"
+      },
+      "publishedAt": "2026-08-29T04:20:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Developers debate the future of AI-assisted programming",
+      "source": {
+        "name": "Developer Weekly"
+      },
+      "publishedAt": "2026-08-29T02:15:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Global markets react to new economic developments",
+      "source": {
+        "name": "World Business"
+      },
+      "publishedAt": "2026-08-28T22:00:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Scientists announce breakthrough in renewable energy research",
+      "source": {
+        "name": "Science Daily"
+      },
+      "publishedAt": "2026-08-28T18:30:00Z"
+    },
+    {
+      "id": 7,
+      "title": "New AI tools are transforming the way developers build software",
+      "source": {
+        "name": "Tech Today"
+      },
+      "publishedAt": "2026-08-29T08:15:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Global markets respond to latest economic policy updates",
+      "source": {
+        "name": "World Business"
+      },
+      "publishedAt": "2026-08-29T10:45:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Researchers develop promising approach to next-generation batteries",
+      "source": {
+        "name": "Science Daily"
+      },
+      "publishedAt": "2026-08-29T12:20:00Z"
+    },
+    {
+      "id": 10,
+      "title": "Open-source developers release major update to popular web framework",
+      "source": {
+        "name": "Developer Weekly"
+      },
+      "publishedAt": "2026-08-29T14:05:00Z"
+    },
+    {
+      "id": 11,
+      "title": "Cities explore smarter public transport systems using real-time data",
+      "source": {
+        "name": "The Daily Report"
+      },
+      "publishedAt": "2026-08-29T16:40:00Z"
+    },
+    {
+      "id": 12,
+      "title": "New study explores how technology is changing modern education",
+      "source": {
+        "name": "Education Today"
+      },
+      "publishedAt": "2026-08-29T19:10:00Z"
+    },
+    {
+      "id": 13,
+      "title": "Cybersecurity experts highlight new strategies for protecting online accounts",
+      "source": {
+        "name": "Digital Security News"
+      },
+      "publishedAt": "2026-08-29T21:25:00Z"
+    },
+    {
+      "id": 14,
+      "title": "Space researchers prepare for a new generation of deep-space missions",
+      "source": {
+        "name": "Science Daily"
+      },
+      "publishedAt": "2026-08-30T06:30:00Z"
+    },
+    {
+      "id": 15,
+      "title": "Developers share the tools they use to build faster and more reliable applications",
+      "source": {
+        "name": "Developer Weekly"
+      },
+      "publishedAt": "2026-08-30T07:45:00Z"
+    },
+    {
+      "id": 16,
+      "title": "Designers explore new possibilities for human-centered digital products",
+      "source": {
+        "name": "Creative Tech"
+      },
+      "publishedAt": "2026-08-30T08:20:00Z"
+    },
+    {
+      "id": 17,
+      "title": "Researchers investigate new methods for reducing electronic waste",
+      "source": {
+        "name": "Future Science"
+      },
+      "publishedAt": "2026-08-30T09:05:00Z"
+    }
+  ]
+}

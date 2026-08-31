@@ -1,0 +1,517 @@
+.main {
+    height: 100vh;
+    min-width: 0;
+    display: flex;
+
+    &_content {
+        width: 70%;
+        min-width: 0;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        padding: 0 1rem;
+
+        &-ul {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            color: $text-color;
+            border-bottom: 1px solid $border-color;
+
+            .nav {
+                display: flex;
+                list-style: none;
+                flex: 1;
+                margin: 0;
+                padding: 0;
+
+                &_items {
+                    position: sticky;
+                    background-color: transparent;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    width: 100%;
+                    text-align: center;
+
+                    flex: 1;
+                    line-height: 3.5rem;
+                    cursor: pointer;
+
+                    a {
+                        text-decoration: none;
+                        color: $secondary-color;
+                    }
+
+                    &:hover {
+                        background-color: lighten($color: $primary-color,
+                                $amount: 10%);
+                        @include transition-ease;
+                    }
+
+                    &.active {
+                        color: white;
+
+                        &::after {
+                            content: "";
+
+                            position: absolute;
+                            bottom: 0;
+                            left: 25%;
+
+                            width: 50%;
+                            height: 4px;
+
+                            background-color: $show-text;
+                            border-radius: 999px;
+                        }
+                    }
+                }
+
+
+            }
+
+            .svg {
+                @include flex;
+                padding: 0 1rem;
+                width: 3rem;
+                height: 3rem;
+
+                svg {
+                    height: 1rem;
+                    width: 1rem;
+                }
+
+                &:hover {
+                    background-color: lighten($color: $primary-color,
+                            $amount: 10%);
+                    @include transition-ease;
+                }
+            }
+
+        }
+
+        .happen {
+            display: flex;
+            flex-direction: column;
+
+            .cont {
+                display: flex;
+                min-height: 11rem;
+                border-bottom: 1px solid $border-color;
+
+                .profile {
+
+                    @include flex;
+                    margin-top: 0.3rem;
+                    margin-bottom: auto;
+                    cursor: pointer;
+                    padding: 0.5rem;
+
+                    flex-shrink: 0;
+                    border-radius: 50%;
+
+                    span {
+                        font-size: 2.5rem;
+                    }
+
+                    &:hover {
+                        background-color: lighten($color: $primary-color,
+                                $amount: 10%);
+                        @include transition-ease;
+                    }
+                }
+
+                &_text {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    padding: 0 1rem;
+
+                    input {
+                        width: 100%;
+                        height: 3.5rem;
+
+                        background-color: transparent;
+                        color: $text-color;
+
+                        border: none;
+                        outline: none;
+
+                        font-size: 1.4rem;
+                    }
+
+                    .reply {
+                        color: $show-text;
+                        font-weight: bold;
+                        font-size: 0.9rem;
+
+                        padding: 0.5rem 0;
+
+                        border-bottom: 1px solid $border-color;
+                    }
+
+                    &_icons {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-top: 0.7rem;
+
+                        &-icon {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.4rem;
+
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+
+                            color: $text-color;
+
+                            li {
+                                @include flex;
+                                height: 3rem;
+                                width: 3rem;
+                                background-color: transparent;
+
+                                @include transition-ease;
+
+                                border-radius: 9999px;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background-color: lighten($color: $primary-color,
+                                            $amount: 10%);
+                                    @include transition-ease;
+                                }
+
+                                svg {
+
+                                    width: 2rem;
+                                    height: 2rem;
+                                    fill: currentColor;
+
+                                    &:hover {
+                                        height: 2.5rem;
+                                        width: 2.5rem;
+                                        padding: 0.1rem;
+                                        color: $secondary-color;
+                                        @include transition-ease;
+                                    }
+                                }
+                            }
+                        }
+
+                        .post {
+                            width: 5.5rem;
+                            height: 2.7rem;
+
+                            border: none;
+                            border-radius: 9999px;
+
+                            font-size: 0.9rem;
+                            font-weight: bold;
+
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: darken($color: $secondary-color, $amount: 10%);
+
+                                @include transition-ease;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_posts {
+                color: $show-text;
+                width: 100%;
+                text-align: center;
+                height: 3rem;
+                @include flex;
+                border-bottom: 1px solid $border-color;
+            }
+
+        }
+
+        &_box {
+            width: 100%;
+
+            .post-card {
+
+                padding: 1rem 0;
+
+                border-bottom: 1px solid $border-color;
+
+                color: $text-color;
+
+                &_header {
+                    display: flex;
+                    align-items: center;
+                }
+
+                &_avatar {
+
+                    @include flex;
+                    margin-top: 0.3rem;
+                    margin-left: 0;
+                    margin-right: 0.7rem;
+                    margin-bottom: auto;
+                    cursor: pointer;
+                    padding: 0.5rem;
+
+                    flex-shrink: 0;
+                    border-radius: 50%;
+
+                    span {
+                        font-size: 2.5rem;
+                    }
+
+                    &:hover {
+                        background-color: lighten($color: $primary-color,
+                                $amount: 10%);
+                        @include transition-ease;
+                    }
+                }
+
+                &_user {
+                    flex: 1;
+                }
+
+                &_name {
+
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3rem;
+
+                    strong {
+                        font-size: 1rem;
+                        &:hover{
+                            text-decoration: underline;
+                            text-decoration-color: $secondary-color;
+                        }
+                    }
+
+                    .verified {
+                        color: $secondary-color;
+
+                        svg {
+                            fill: $show-text;
+                        }
+
+                    }
+                }
+
+                &_username {
+
+                    color: lighten($text-color, 30%);
+                    font-size: 0.9rem;
+
+                    margin-top: 0.2rem;
+                }
+
+                &_more {
+
+                    background: transparent;
+                    border: none;
+
+                    color: $text-color;
+
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    column-gap: 0.5rem;
+
+                    font-size: 1rem;
+
+                    svg {
+                        fill: lighten($color: $primary-color, $amount: 40%);
+                        border-radius: 50%;
+                        cursor: pointer;
+                        height: 2rem;
+                        width: 2rem;
+                        padding: 0.3rem;
+
+                        &:hover {
+                            background-color: darken($color: $show-text,
+                                    $amount: 40%);
+                            @include transition-ease;
+                            fill: rgba(29, 155, 240, 1);
+                        }
+                    }
+                }
+
+                &_content {
+
+                    padding-left: 3.2rem;
+
+                    p {
+                        margin: 0.7rem 0;
+
+                        font-size: 1rem;
+                        line-height: 1.4;
+                    }
+                }
+
+                &_image {
+
+                    display: block;
+
+                    width: 100%;
+                    max-height: 30rem;
+
+                    object-fit: cover;
+
+                    border-radius: 1rem;
+
+                    margin-top: 0.8rem;
+                }
+
+                &_actions {
+
+                    display: flex;
+
+                    justify-content: space-between;
+
+                    padding-left: 3.2rem;
+
+                    margin-top: 0.8rem;
+
+                    button {
+
+                        background: transparent;
+                        border: none;
+
+                        color: $secondary-color;
+
+                        cursor: pointer;
+
+                        display: flex;
+                        align-items: center;
+                        gap: 0.3rem;
+
+
+                    }
+
+                    .btns {
+                        gap: 0.5rem;
+                        @include flex;
+                    }
+
+                    svg {
+                        fill: lighten($color: $primary-color, $amount: 50%);
+                        border-radius: 50%;
+                        cursor: pointer;
+                        height: 2rem;
+                        width: 2rem;
+                        padding: 0.3rem;
+                        @include flex;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+#_1 {
+    svg {
+        &:hover {
+            background-color: darken($color: $show-text,
+                    $amount: 40%);
+            @include transition-ease;
+            fill: rgba(29, 155, 240, 1);
+        }
+    }
+
+    span {
+        &:hover {
+
+            @include color-bg(rgba(29, 155, 240, 1))
+        }
+    }
+}
+#_2 {
+    svg {
+        &:hover {
+            background-color: darken($color: rgba(0, 186, 124, 1),
+                    $amount: 25%);
+            @include transition-ease;
+            fill: rgba(0, 186, 124, 1);
+        }
+    }
+
+    span {
+        &:hover {
+
+            @include color-bg(rgba(0, 186, 124, 1))
+        }
+    }
+}
+#_3 {
+    svg {
+        &:hover {
+            background-color: darken($color: rgb(183, 14, 62),
+                    $amount: 30%);
+            @include transition-ease;
+            fill: rgb(183, 14, 61);
+        }
+    }
+
+    span {
+        &:hover {
+
+            @include color-bg(rgb(183, 14, 61))
+        }
+    }
+}
+#_4 {
+    svg {
+        &:hover {
+            background-color: darken($color: $show-text,
+                    $amount: 40%);
+            @include transition-ease;
+            fill: rgba(29, 155, 240, 1);
+        }
+    }
+
+    span {
+        &:hover {
+
+            @include color-bg(rgba(29, 155, 240, 1))
+        }
+    }
+}
+#_5 {
+    svg {
+        &:hover {
+            background-color: darken($color: $show-text,
+                    $amount: 40%);
+            @include transition-ease;
+            fill: rgba(29, 155, 240, 1);
+        }
+    }
+
+    span {
+        &:hover {
+
+            @include color-bg(rgba(29, 155, 240, 1))
+        }
+    }
+}
+#_6 {
+    svg {
+        &:hover {
+            background-color: darken($color: $show-text,
+                    $amount: 40%);
+            @include transition-ease;
+            fill: rgba(29, 155, 240, 1);
+        }
+    }
+
+    span {
+        &:hover {
+
+            @include color-bg(rgba(29, 155, 240, 1))
+        }
+    }
+}

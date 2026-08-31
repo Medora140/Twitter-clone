@@ -1,0 +1,20 @@
+.footer{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: $text-color;
+    li{
+        &:hover{
+                            text-decoration: underline;
+                            text-decoration-color: $secondary-color;
+                        }
+    }
+
+    #company{
+        list-style: none;
+    }
+}

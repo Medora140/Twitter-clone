@@ -1,0 +1,44 @@
+.floating-buttons {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    z-index: 1000;
+
+    button {
+        width: 4rem;
+        height: 4rem;
+
+        @include flex;
+
+        padding: 0;
+
+        background-color: $primary-color;
+        color: white;
+
+        border: 1px solid $border-color;
+        border-radius: 20%;
+
+        cursor: pointer;
+
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.662);
+
+        svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: currentColor;
+        }
+
+        &:hover {
+            background-color: lighten(
+                $color: $primary-color,
+                $amount: 10%
+            );
+            @include transition-ease;
+        }
+    }
+}

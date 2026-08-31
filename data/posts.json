@@ -1,0 +1,140 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author": {
+        "name": "Morty",
+        "username": "@0xMortyx",
+        "verified": true
+      },
+      "content": "Agents aren't magic. They're distillation at scale. The real challenge is making AI systems reliable enough to work in the real world.",
+      "timestamp": "20h",
+      "image": "images/karpathy.png",
+      "stats": {
+        "replies": 128,
+        "reposts": 842,
+        "likes": 4200,
+        "views": 125000
+      }
+    },
+    {
+      "id": 2,
+      "author": {
+        "name": "TechCrunch",
+        "username": "@TechCrunch",
+        "verified": true
+      },
+      "content": "The AI race is moving faster than ever. New models, agents and developer tools are changing how software is built.",
+      "timestamp": "2h",
+      "image": "images/agents.png",
+      "stats": {
+        "replies": 84,
+        "reposts": 321,
+        "likes": 1800,
+        "views": 54000
+      }
+    },
+    {
+      "id": 3,
+      "author": {
+        "name": "OpenAI",
+        "username": "@OpenAI",
+        "verified": true
+      },
+      "content": "Building useful AI means making it faster, more reliable and easier for everyone to use.",
+      "timestamp": "4h",
+      "image": "images/openAI.png",
+      "stats": {
+        "replies": 245,
+        "reposts": 1200,
+        "likes": 6800,
+        "views": 210000
+      }
+    },
+    {
+      "id": 4,
+      "author": {
+        "name": "Sarah Chen",
+        "username": "@sarahcodes",
+        "verified": false
+      },
+      "content": "Spent the entire weekend debugging one tiny CSS issue. Turns out I forgot a single closing bracket. 😭",
+      "timestamp": "6h",
+      "image": "images/Sarah.png",
+      "stats": {
+        "replies": 32,
+        "reposts": 76,
+        "likes": 940,
+        "views": 18000
+      }
+    },
+    {
+      "id": 5,
+      "author": {
+        "name": "Vercel",
+        "username": "@vercel",
+        "verified": true
+      },
+      "content": "The best developer experience is the one that gets out of your way.",
+      "timestamp": "8h",
+      "image": "images/vercel.png",
+      "stats": {
+        "replies": 54,
+        "reposts": 430,
+        "likes": 2300,
+        "views": 76000
+      }
+    },
+    {
+      "id": 6,
+      "author": {
+        "name": "Alex Morgan",
+        "username": "@alexbuilds",
+        "verified": false
+      },
+      "content": "Just shipped my first full-stack project with Node.js, Express and vanilla JavaScript. What a journey!",
+      "timestamp": "12h",
+      "image": "images/alex.png",
+      "stats": {
+        "replies": 18,
+        "reposts": 42,
+        "likes": 630,
+        "views": 12000
+      }
+    },
+    {
+      "id": 7,
+      "author": {
+        "name": "GitHub",
+        "username": "@github",
+        "verified": true
+      },
+      "content": "Your code. Your ideas. Your next big project. Keep building.",
+      "timestamp": "14h",
+      "image": "images/github.png",
+      "stats": {
+        "replies": 63,
+        "reposts": 390,
+        "likes": 2100,
+        "views": 68000
+      }
+    },
+    {
+      "id": 8,
+      "author": {
+        "name": "The Verge",
+        "username": "@verge",
+        "verified": true
+      },
+      "content": "AI assistants are becoming part of everyday workflows, from coding and writing to research and design.",
+      "timestamp": "16h",
+      "image": "images/verge.png",
+      "stats": {
+        "replies": 91,
+        "reposts": 510,
+        "likes": 2900,
+        "views": 83000
+      }
+    }
+  ]
+}

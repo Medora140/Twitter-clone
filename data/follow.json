@@ -1,0 +1,94 @@
+{
+    "follow": [
+        {
+            "id": 1,
+            "name": "HashCash Consultants",
+            "username": "@HashCashAdmin",
+            "following": false
+        },
+        {
+            "id": 2,
+            "name": "Noah",
+            "username": "@Noahdsilva",
+            "following": false
+        },
+        {
+            "id": 3,
+            "name": "Prajnal Kashyap",
+            "username": "@KashyapPrajna",
+            "following": false
+        },
+        {
+            "id": 4,
+            "name": "Ananya Sharma",
+            "username": "@AnanyaCodes",
+            "following": false
+        },
+        {
+            "id": 5,
+            "name": "Arjun Mehta",
+            "username": "@ArjunBuilds",
+            "following": false
+        },
+        {
+            "id": 6,
+            "name": "TechCrunch",
+            "username": "@TechCrunch",
+            "following": false
+        },
+        {
+            "id": 7,
+            "name": "GitHub",
+            "username": "@github",
+            "following": false
+        },
+        {
+            "id": 8,
+            "name": "OpenAI",
+            "username": "@OpenAI",
+            "following": false
+        },
+        {
+            "id": 9,
+            "name": "Google Developers",
+            "username": "@GoogleDev",
+            "following": false
+        },
+        {
+            "id": 10,
+            "name": "Microsoft Developer",
+            "username": "@msdev",
+            "following": false
+        },
+        {
+            "id": 11,
+            "name": "Priya Nair",
+            "username": "@PriyaNairTech",
+            "following": false
+        },
+        {
+            "id": 12,
+            "name": "Rohan Patel",
+            "username": "@RohanPatel",
+            "following": false
+        },
+        {
+            "id": 13,
+            "name": "Sarah Chen",
+            "username": "@SarahBuilds",
+            "following": false
+        },
+        {
+            "id": 14,
+            "name": "The Verge",
+            "username": "@verge",
+            "following": false
+        },
+        {
+            "id": 15,
+            "name": "Vercel",
+            "username": "@vercel",
+            "following": false
+        }
+    ]
+}

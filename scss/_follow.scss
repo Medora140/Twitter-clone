@@ -1,0 +1,108 @@
+.follow {
+    border: 1px solid $border-color;
+    border-radius: 1.2rem;
+    overflow-y: auto;
+    height: 400px;
+    min-height: 0;
+    flex-shrink: 0;
+    @include scroll;
+
+    &-header {
+        padding: 0.8rem 1rem;
+
+        h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+
+    #follow-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .follow-card {
+
+        display: flex;
+        align-items: center;
+
+        padding: 0.7rem 1rem;
+
+        min-height: 3.5rem;
+
+        @include transition-ease;
+
+        &:hover {
+            background-color: lighten(
+                $color: $primary-color,
+                $amount: 5%
+            );
+        }
+
+        &_avatar {
+
+            margin-right: 0.7rem;
+
+            span {
+                font-size: 2.5rem;
+            }
+        }
+
+        &_user {
+            flex: 1;
+            min-width: 0;
+        }
+
+        &_name {
+
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+
+            strong {
+                font-size: 0.9rem;
+                &:hover{
+                            text-decoration: underline;
+                            text-decoration-color: $secondary-color;
+                        }
+            }
+
+        }
+
+        &_username {
+
+            color: lighten($text-color, 30%);
+            font-size: 0.7rem;
+
+            margin-top: 0.2rem;
+        }
+
+        &_ppl {
+            flex-shrink: 0;
+
+            width: 5rem;
+            height: 2rem;
+
+            border: none;
+            border-radius: 9999px;
+
+            font-size: 0.8rem;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            background-color: $secondary-color;
+            color: $primary-color;
+
+            @include transition-ease;
+
+            &:hover {
+                background-color: lighten(
+                    $color: $text-color,
+                    $amount: 10%
+                );
+            }
+        }
+    }
+}
