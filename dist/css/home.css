@@ -910,6 +910,57 @@ body {
   position: relative;
 }
 
+@media screen and (min-width: 1260px) {
+  .sideBar {
+    margin-left: 1rem;
+    align-items: flex-start;
+    overflow-x: hidden;
+    gap: 2rem;
+  }
+  .sideBar .icons_icon {
+    width: 10rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin: 0.2rem 0;
+    border-radius: 0%;
+  }
+  .sideBar .icons_icon::after {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.596);
+  }
+  .sideBar .icons_icon:nth-child(2)::after {
+    content: "Home";
+  }
+  .sideBar .icons_icon:nth-child(3)::after {
+    content: "Explore";
+  }
+  .sideBar .icons_icon:nth-child(4)::after {
+    content: "Notifications";
+  }
+  .sideBar .icons_icon:nth-child(5)::after {
+    content: "Follow";
+  }
+  .sideBar .icons_icon:nth-child(6)::after {
+    content: "Chat";
+  }
+  .sideBar .icons_icon:nth-child(7)::after {
+    content: "Grok";
+  }
+  .sideBar .icons_icon:nth-child(8)::after {
+    content: "History";
+  }
+  .sideBar .icons_icon:nth-child(9)::after {
+    content: "Profile";
+  }
+  .sideBar .icons_icon:nth-child(10)::after {
+    content: "More";
+  }
+  .sideBar .icons_icon:nth-child(11)::after {
+    content: "Post";
+  }
+}
 @media screen and (max-width: 1355px) {
   .main_content .happen .cont_text_icons-icon {
     gap: 0.2rem;

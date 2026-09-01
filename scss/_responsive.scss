@@ -1,3 +1,53 @@
+@media screen and (min-width: 1260px) {
+
+    .sideBar {
+        margin-left: 1rem;
+        align-items: flex-start;
+        overflow-x: hidden;
+        gap: 2rem;
+
+        .icons {
+
+            &_icon {
+                width: 10rem;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+                padding: 0 1rem;
+                margin: 0.2rem 0;
+                border-radius: 0%;
+
+                &::after {
+                    font-size: 0.9rem;
+                    color: $text-color;
+                }
+            }
+
+            $names: (
+                "Home",
+                "Explore",
+                "Notifications",
+                "Follow",
+                "Chat",
+                "Grok",
+                "History",
+                "Profile",
+                "More",
+                "Post"
+            );
+
+        @for $i from 1 through length($names) {
+
+            &_icon:nth-child(#{$i + 1})::after {
+                content: nth($names, $i);
+            }
+
+        }
+    }
+}
+}
+
+
 @media screen and (max-width:1355px) {
 
     .main {
