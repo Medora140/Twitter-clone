@@ -1,3 +1,4 @@
+console.log("POSTS JS LOADED");
 async function loadPosts() {
 
     try {
