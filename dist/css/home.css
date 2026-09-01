@@ -10,6 +10,23 @@
   display: flex;
   flex-direction: column;
   overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(29, 155, 240) transparent;
+}
+.sideBar::-webkit-scrollbar {
+  width: 6px;
+}
+.sideBar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sideBar::-webkit-scrollbar-thumb {
+  background: rgb(29, 155, 240);
+  border-radius: 10px;
+}
+.sideBar::-webkit-scrollbar-thumb:hover {
+  background: rgb(76.8257261411, 176.1618257261, 243.1742738589);
+}
+.sideBar {
   padding: 1rem 0;
   padding-right: 1rem;
   align-items: end;
@@ -888,10 +905,9 @@ body {
   height: 100vh;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: grid;
+  grid-template-columns: 188px minmax(500px, 1fr) 100px;
   margin: 0;
   position: relative;
-  grid-template-columns: clamp(150px, 10vw, 188px) minmax(500px, 1fr) clamp(100px, 10vw, 350px);
-  width: 100%;
 }
 
 @media screen and (max-width: 1355px) {
@@ -916,7 +932,7 @@ body {
     font-size: 0.85rem;
   }
 }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1170px) {
   body {
     grid-template-columns: clamp(100px, 9vw, 188px) minmax(0, 1fr);
   }

@@ -13,16 +13,16 @@ body {
     height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
-    // grid-template-columns: 188px minmax(500px, 1fr) 100px;
+    grid-template-columns: 188px minmax(500px, 1fr) 100px;
     margin: 0;
     position: relative;
 
 
-    grid-template-columns:
-        clamp(150px, 10vw, 188px)
-        minmax(500px, 1fr)
-        clamp(100px, 10vw, 350px);
-    width: 100%;
+    // grid-template-columns:
+    //     clamp(150px, 10vw, 188px)
+    //     minmax(500px, 1fr)
+    //     clamp(100px, 10vw, 350px);
+    // width: 100%;
 }
 
 @import "responsive";
