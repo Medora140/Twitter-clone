@@ -2,9 +2,7 @@ async function loadFollowers() {
 
     try {
 
-        const response = await fetch(
-            "http://localhost:3000/api/follow"
-        );
+        const response = await fetch("./data/follow.json");
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);

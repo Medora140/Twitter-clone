@@ -1,11 +1,9 @@
-console.log("POSTS JS LOADED");
+
 async function loadPosts() {
 
     try {
 
-        const response = await fetch(
-            "http://localhost:3000/api/posts"
-        );
+        const response = await fetch("./data/posts.json");
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);

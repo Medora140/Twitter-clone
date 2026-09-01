@@ -1,6 +1,6 @@
 async function loadNews() {
     try {
-        const response = await fetch("http://localhost:3000/api/news");
+        const response = await fetch("./data/news.json");
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
