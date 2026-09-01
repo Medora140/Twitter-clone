@@ -6,7 +6,7 @@
 
 .sideBar {
   height: 100vh;
-  width: 188px;
+  width: auto;
   display: flex;
   flex-direction: column;
   overflow: auto;
@@ -84,7 +84,7 @@
 }
 .main_content {
   height: 100%;
-  width: 70%;
+  width: 100%;
   min-width: 0;
   border-left: 1px solid rgba(194, 193, 193, 0.285);
   border-right: 1px solid rgba(194, 193, 193, 0.285);
@@ -104,6 +104,9 @@
 }
 .main_content::-webkit-scrollbar-thumb:hover {
   background: rgb(76.8257261411, 176.1618257261, 243.1742738589);
+}
+.main_content {
+  transition: width 0.45s ease, flex-basis 0.45s ease;
 }
 .main_content-ul {
   position: sticky;
@@ -486,7 +489,7 @@ svg {
 }
 
 .news {
-  height: 100%;
+  height: 15%;
   min-height: 0;
   display: flex;
   flex-direction: column;
@@ -495,6 +498,12 @@ svg {
   width: 30%;
 }
 .news .search {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(194, 193, 193, 0.285);
   display: flex;
   border-radius: 3rem;
@@ -597,7 +606,7 @@ svg {
   padding: 1rem;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(12px);
@@ -674,7 +683,7 @@ svg {
   padding: 1rem;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(12px);
@@ -787,7 +796,7 @@ svg {
   padding: 0.8rem 1rem;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(12px);
@@ -879,7 +888,73 @@ body {
   height: 100vh;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: grid;
-  grid-template-columns: 188px minmax(500px, 1fr) 200px;
   margin: 0;
   position: relative;
+  grid-template-columns: clamp(150px, 10vw, 188px) minmax(500px, 1fr) clamp(100px, 10vw, 350px);
+  width: 100%;
+}
+
+@media screen and (max-width: 1355px) {
+  .main_content .happen .cont_text_icons-icon {
+    gap: 0.2rem;
+  }
+  .main_content .happen .cont_text_icons-icon li {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .main_content .happen .cont_text_icons-icon li svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .main_content .happen .cont_text_icons-icon li:hover svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  .main_content .happen .cont_text_icons .post {
+    width: 5rem;
+    height: 2.4rem;
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 1070px) {
+  body {
+    grid-template-columns: clamp(100px, 9vw, 188px) minmax(0, 1fr);
+  }
+  .main {
+    position: relative;
+  }
+  .main_content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    flex: 1 1 100%;
+    transition: width 0.45s ease, flex-basis 0.45s ease;
+  }
+  .news {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+    margin: 0.5rem;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: transform 0.45s ease, opacity 0.3s ease, width 0.45s ease;
+  }
+  .floating-buttons {
+    opacity: 0;
+    transform: translateX(40px) scale(0.9);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.45s ease;
+  }
+}
+@media screen and (max-width: 855px) {
+  .sideBar {
+    width: auto;
+  }
 }/*# sourceMappingURL=home.css.map */

@@ -6,12 +6,17 @@
     &_content {
         height: 100%;
 
-        width: 70%;
+        // width: 70%;
+        width: 100%;
         min-width: 0;
         border-left: 1px solid $border-color;
         border-right: 1px solid $border-color;
         padding: 0 1rem;
         @include scroll;
+
+        transition:
+        width 0.45s ease,
+        flex-basis 0.45s ease;
 
         &-ul {
 
